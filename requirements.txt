@@ -1,0 +1,50 @@
+# ============================================================
+# DÉPENDANCES PYTHON
+# Système de recommandation d'articles scientifiques
+# ============================================================
+
+# ── Infrastructure ───────────────────────────────────────────
+kafka-python==2.0.2
+pyspark==3.4.1
+
+# ── Bases de données ─────────────────────────────────────────
+psycopg2-binary==2.9.9       # PostgreSQL
+pymongo==4.6.1                # MongoDB
+elasticsearch==8.11.1         # Elasticsearch
+redis==5.0.1                  # Redis
+
+# ── NLP & Embeddings ─────────────────────────────────────────
+transformers==4.36.2          # HuggingFace (BioBERT, SciBERT)
+torch==2.1.2                  # PyTorch (CPU par défaut)
+sentence-transformers==2.3.1  # Sentence embeddings simplifiés
+numpy==1.24.4
+scipy==1.11.4
+
+# ── API ──────────────────────────────────────────────────────
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+python-jose[cryptography]==3.3.0  # JWT tokens
+passlib[bcrypt]==1.7.4             # Hachage mots de passe
+python-multipart==0.0.6
+
+# ── Interface ────────────────────────────────────────────────
+streamlit==1.30.0
+requests==2.31.0
+
+# ── Collecteur ───────────────────────────────────────────────
+httpx==0.26.0                 # Requêtes HTTP async
+lxml==4.9.4                   # Parsing XML PubMed
+feedparser==6.0.11            # Parsing arXiv RSS/Atom
+
+# ── Utilitaires ──────────────────────────────────────────────
+python-dotenv==1.0.0          # Lecture fichier .env
+pandas==2.1.4                 # Manipulation données
+tqdm==4.66.1                  # Barres de progression
+loguru==0.7.2                 # Logging amélioré
+schedule==1.2.1               # Planification tâches
+
+# ── Évaluation ───────────────────────────────────────────────
+scikit-learn==1.3.2
+matplotlib==3.8.2
+seaborn==0.13.1
